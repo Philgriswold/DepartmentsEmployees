@@ -112,7 +112,7 @@ namespace DepartmentsEmployee.Data
                         employee = new Employee
                         {
                             Id = id,
-                            FirstName = reader.GetString(reader.GetOrdinal("First Name")),
+                            FirstName = reader.GetString(reader.GetOrdinal("FirstName")),
                             LastName = reader.GetString(reader.GetOrdinal("LastName"))
                         };
                     }

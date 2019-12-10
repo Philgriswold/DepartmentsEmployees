@@ -39,7 +39,7 @@ namespace DepartmentsEmployees
                 Console.WriteLine(employee.FirstName);
             }
 
-            var hardCodedEmployeeId = 3;
+            var hardCodedEmployeeId = 2;
 
             var employeeWithId3 = employeeRepo.GetEmployeeById(hardCodedEmployeeId);
 

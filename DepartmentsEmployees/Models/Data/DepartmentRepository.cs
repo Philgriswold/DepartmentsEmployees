@@ -136,7 +136,7 @@ namespace DepartmentsEmployee.Data
                             {
                                 // These SQL parameters are annoying. Why can't we use string interpolation?
                                 // ... sql injection attacks!!!
-                                cmd.CommandText = "INSERT INTO Department (DeptName) OUTPUT INSERTED.Id Values ('{department.Department})";
+                                cmd.CommandText = "INSERT INTO Department (DeptName) OUTPUT INSERTED.Id Values ('{department.Department}')";
                                 cmd.Parameters.Add(new SqlParameter("@deptName", department.DepartmentName));
                                 int id = (int)cmd.ExecuteScalar();
 
